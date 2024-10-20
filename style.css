@@ -191,10 +191,12 @@ nav ul li a:hover {
 
 .intro-box {
     display: flex;
+    flex-direction: column; /* Stack vertically on smaller screens */
+        padding: 20px;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
-    padding: 40px;
+ 
     border-radius: 10px;
     border: 2px solid #ff00ff;
     max-width: 900px;
