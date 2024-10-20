@@ -20,6 +20,7 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
 /* Contact Section */
 .contact-box {
     margin: 50px auto;
@@ -65,7 +66,6 @@ body {
 .contact-details a:hover i {
     color: #ff00ff;
 }
-
 
 /* Neon Text Effect */
 .neon-text {
@@ -191,7 +191,8 @@ nav ul li a:hover {
 
 .intro-box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 40px;
@@ -271,7 +272,6 @@ nav ul li a:hover {
     transform: translateY(-5px); /* Move text upwards on hover */
 }
 
-
 /* Skills Section */
 .content-section {
     margin-top: 50px;
@@ -348,4 +348,48 @@ nav ul li a:hover {
     border-radius: 10px;
     color: #d9b3ff;
     text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .intro-box {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        padding: 20px;
+    }
+
+    .intro-pic {
+        width: 100%; /* Make the image take full width on small screens */
+        margin-bottom: 20px; /* Space below the image */
+    }
+
+    .contact-box, .content-section, .certification-card {
+        padding: 20px; /* Reduce padding on smaller screens */
+        margin: 20px; /* Reduce margin on smaller screens */
+    }
+
+    .skills-list li {
+        font-size: 1.3rem; /* Smaller font size for skills */
+    }
+
+    .hobby-icons {
+        flex-direction: column; /* Stack icons vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0 10px; /* Reduce space between navigation items */
+    }
+
+    .neon-text {
+        font-size: 2rem; /* Smaller font size for neon text */
+    }
+
+    .glitch {
+        font-size: 3rem; /* Smaller font size for glitch effect */
+    }
+
+    .contact-details a {
+        font-size: 1.2rem; /* Smaller font size for contact links */
+    }
 }
