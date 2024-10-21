@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
+    <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="skillsets.html">Skillsets</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="navbar">
+                <div class="toggle-button" id="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="skillsets.html">Skillsets</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-
 
     <main>
         <section class="intro-section">
@@ -27,15 +33,59 @@
                 <div class="intro-text">
                     <h1 class="neon-text">Mohamedh Faizal</h1>
                     <h2 class="neon-subtitle">Aspiring Data Analyst</h2>
-                    <p class="about-me">Hello, this is Faizal from Madurai an Aspiring Data analyst. I am currently purusuing B.Sc in CS with Data science and Analytics at Manikam Ramaswami College of Arts and Science. I am a coding and tech enthusiast. I have completed my schooling at TVS HSS. My dream is to become a "Cricket Analyst". This portfolio is a way for you to get to know me better—who I am, what I do, and what I'm passionate about.</p>
+                    <p class="about-me">Hello, this is Faizal from Madurai, an Aspiring Data Analyst. I am currently pursuing B.Sc in CS with Data Science and Analytics at Manikam Ramaswami College of Arts and Science. I am a coding and tech enthusiast. I have completed my schooling at TVS HSS. My dream is to become a "Cricket Analyst". This portfolio is a way for you to get to know me better—who I am, what I do, and what I'm passionate about.</p>
                 </div>
                 <div class="intro-pic">
                     <img src="faiz-min.jpg" alt="Profile Picture of Mohamedh Faizal">
                 </div>
             </div>
         </section>
+
+        <!-- Modal Trigger -->
+        <button onclick="openModal('myModal')">Open Modal</button>
+
+        <!-- Modal Structure -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('myModal')">&times;</span>
+                <p>This is a modal window</p>
+            </div>
+        </div>
     </main>
 
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // Modal functionality
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block'; // Show the modal
+            setTimeout(() => {
+                modal.classList.add('show'); // Add show class to make it visible and enable opacity transition
+            }, 10); // Delay to trigger transition smoothly
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('show'); // Remove show class for fading out effect
+            setTimeout(() => {
+                modal.style.display = 'none'; // Hide the modal after transition ends
+            }, 300); // Match this with CSS transition duration (0.3s)
+        }
+
+        // Close modal when clicking outside the modal content
+        window.onclick = function(event) {
+            const modals = document.getElementsByClassName('modal');
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    closeModal(modals[i].id);
+                }
+            }
+        }
+
+        // Toggle navigation for mobile
+        document.getElementById('toggle-button').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
