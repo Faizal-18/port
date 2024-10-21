@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #000000; /* Set background to black */
+    background: black; /* Set background to black */
     font-family: 'Orbitron', sans-serif;
     color: #fff;
     overflow-x: hidden;
