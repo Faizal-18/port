@@ -200,6 +200,16 @@ nav ul li a:hover {
     width: 90%;
 }
 
+/* For Mobile Phones */
+@media only screen and (max-width: 480px) {
+    .intro-box {
+        flex-direction: column; /* Stack text and image */
+    }
+
+    .intro-pic {
+        width: 100%; /* Full width for the image */
+    }
+}
 .intro-text h1 {
     font-size: 2.5rem;
     color: #d9b3ff;
@@ -347,4 +357,69 @@ nav ul li a:hover {
     border-radius: 10px;
     color: #d9b3ff;
     text-align: center;
+}
+/* Mobile Phones (up to 480px wide) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .intro-box {
+        flex-direction: column;
+    }
+
+    .intro-pic {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-me {
+        font-size: 1rem;
+    }
+
+    .contact-box {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .skills-list li {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets (up to 768px wide) */
+@media only screen and (max-width: 768px) {
+    .intro-box {
+        flex-direction: column;
+    }
+
+    .intro-pic {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .skills-list li {
+        font-size: 1.4rem;
+    }
+
+    .contact-box {
+        max-width: 90%;
+    }
 }
