@@ -146,6 +146,7 @@ section {
 }
 
 /* Header Navigation */
+/* Header Navigation */
 header {
     position: fixed;
     top: 0;
@@ -155,44 +156,17 @@ header {
     z-index: 1000;
 }
 
-nav {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between toggle and nav links */
-    align-items: center; /* Center items vertically */
-}
-
 nav ul {
-    display: none; /* Hidden by default */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items */
-    align-items: center; /* Center items horizontally */
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    position: absolute; /* Position it absolutely */
-    top: 60px; /* Adjust to just below the header */
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background for visibility */
-    max-height: 0; /* Start with max height of 0 */
-    overflow: hidden; /* Hide overflow */
-    transition: max-height 0.3s ease; /* Smooth transition */
-}
-
-nav ul.show {
-    display: flex; /* Show as flex when toggled */
-    max-height: 500px; /* Set a higher max height when expanded */
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
 nav ul li {
-    margin: 10px 0; /* Space between items */
-    width: 100%; /* Make items full width */
-    text-align: center; /* Center text in items */
+    margin: 0 20px;
 }
 
 nav ul li a {
-    display: block; /* Make anchor tags block-level */
-    padding: 10px; /* Add padding for clickable area */
     color: #d9b3ff;
     text-decoration: none;
     text-shadow: 0 0 5px #ff00ff;
@@ -204,6 +178,7 @@ nav ul li a:hover {
     color: #ff00ff;
     transform: scale(1.2);
 }
+
 /* Intro Section */
 .intro-section {
     display: flex;
