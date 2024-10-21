@@ -23,20 +23,5 @@ window.onclick = function(event) {
         }
     }
 }
-// Toggle the navigation menu
-document.getElementById('toggle-button').addEventListener('click', function () {
-    const nav = document.getElementById('navbar');
-    nav.classList.toggle('show'); // Toggle the 'show' class to open/close the menu
-});
 
-// Close the navigation when clicking outside of it
-window.addEventListener('click', function (event) {
-    const nav = document.getElementById('navbar');
-    const toggleButton = document.getElementById('toggle-button');
-
-    // Check if the clicked target is outside the nav and toggle button
-    if (!nav.contains(event.target) && !toggleButton.contains(event.target)) {
-        nav.classList.remove('show'); // Close the menu if clicking outside
-    }
-});
 
