@@ -349,3 +349,79 @@ nav ul li a:hover {
     color: #d9b3ff;
     text-align: center;
 }
+/* For devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    /* Intro section layout for mobile */
+    .intro-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .intro-box {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .intro-pic {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Ensure the image scales properly */
+    .intro-pic img {
+        width: 100%;
+    }
+
+    /* Section padding adjustment */
+    section {
+        padding: 20px;
+    }
+
+    /* Contact box adjustments */
+    .contact-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+/* For very small devices (max width of 480px, like phones) */
+@media (max-width: 480px) {
+    /* Make font sizes smaller for readability */
+    .neon-text {
+        font-size: 1.8rem;
+    }
+
+    .intro-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-me {
+        font-size: 1rem;
+    }
+
+    /* Make the hobby icons smaller */
+    .hobby i {
+        font-size: 2.5rem;
+    }
+
+    /* Adjust certification card for small screens */
+    .certification-card {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    /* Modal size adjustments */
+    .modal-content {
+        width: 90%;
+    }
+
+    /* Skills list adjustments */
+    .skills-list li {
+        font-size: 1.2rem;
+    }
+}
