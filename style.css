@@ -73,9 +73,7 @@ body {
 /* Neon Text Effect */
 .neon-text {
     color: #d9b3ff;
-    text-shadow: 0 0 8px #d9b3ff, 0 0 16px #ff00ff, 0 0 24px #ff00ff, 0 0 32px #ff00ff;
-    font-size: 2.5rem;
-    transition: transform 0.3s ease;
+    text-shadow: 0 0 8px #d9b3ff, 0 0 16px #ff00ff;
 }
 
 .neon-text:hover {
@@ -88,9 +86,7 @@ body {
     position: relative;
     color: #fff;
     text-transform: uppercase;
-    animation: glitch 1.2s infinite;
 }
-
 .glitch:before, .glitch:after {
     content: attr(data-text);
     position: absolute;
@@ -137,7 +133,7 @@ body {
     }
 }
 
-/* Section Styling */
+/* Additional Styles for Sections */
 section {
     padding: 40px;
     text-align: center;
@@ -146,8 +142,9 @@ section {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.75);
     border: 2px solid #ff00ff;
-    animation: fadeInUp 1s ease-in-out;
 }
+
+
 
 /* Header Navigation */
 header {
@@ -182,6 +179,24 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
+/* Side Menu Styles */
+.side-menu {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Width of the side menu */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    border-right: 2px solid #ff00ff; /* Cyberpunk border */
+    z-index: 1001; /* Ensure it is above other elements */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Show the side menu when 'show' class is added */
+.side-menu.show {
+    display: block; /* Show when class is added */
+}
 /* Intro Section */
 /* Intro Section */
 .intro-section {
@@ -339,7 +354,7 @@ nav ul li a:hover {
     font-size: 1.1rem;
 }
 
-/* Modal Box */
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -355,6 +370,7 @@ nav ul li a:hover {
 
 .modal.show {
     opacity: 1;
+    display: block; /* Ensure it is displayed when shown */
 }
 
 .modal-content {
@@ -369,7 +385,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Responsive: Adjust spacing and size on smaller screens */
+/* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
         flex-wrap: wrap; /* Ensure wrapping happens */
@@ -382,6 +398,10 @@ nav ul li a:hover {
 
     nav ul li a {
         font-size: 1.1rem; /* Slightly smaller font size for mobile */
+    }
+
+    .side-menu {
+        width: 100%; /* Full width on mobile */
     }
 }
 
