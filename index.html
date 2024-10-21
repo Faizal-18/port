@@ -78,6 +78,25 @@
             for (let i = 0; i < modals.length; i++) {
                 if (event.target == modals[i]) {
                     closeModal(modals[i].id);
+        // Toggle navigation for mobile
+document.getElementById('toggle-button').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+
+    // For fading effect: remove the display property on show
+    if (navLinks.classList.contains('show')) {
+        navLinks.style.display = 'block'; // Set to block when shown
+        setTimeout(() => {
+            navLinks.style.opacity = '1'; // Fade in
+        }, 10); // Small timeout to allow for transition
+    } else {
+        navLinks.style.opacity = '0'; // Fade out
+        setTimeout(() => {
+            navLinks.style.display = 'none'; // Hide after fade out
+        }, 500); // Match with CSS transition duration
+    }
+});
+
                 }
             }
         }
