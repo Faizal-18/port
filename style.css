@@ -423,3 +423,35 @@ nav ul li a:hover {
         max-width: 90%;
     }
 }
+/* Navigation Links */
+#nav-links {
+    display: none; /* Hide by default */
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.5s ease; /* Transition for fading effect */
+}
+
+#nav-links.show {
+    display: block; /* Show when the class is added */
+    opacity: 1; /* Set to full opacity */
+}
+
+/* Additional styling for responsive mobile view */
+.toggle-button {
+    display: none; /* Hide toggle button by default */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block; /* Show toggle button on smaller screens */
+    }
+
+    #nav-links {
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Background for visibility */
+        z-index: 100; /* Ensure it's above other content */
+    }
+}
