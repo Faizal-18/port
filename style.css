@@ -6,13 +6,14 @@
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
-    background:black;
     font-family: 'Orbitron', sans-serif;
     color: #fff;
+    background: black;
     min-height: 100vh;
-    margin: 0;
 }
+
 
 /* Smooth Gradient Animation */
 @keyframes gradientMove {
@@ -366,4 +367,69 @@ nav ul li a:hover {
     border-radius: 10px;
     color: #d9b3ff;
     text-align: center;
+}
+/* Side Menu Styles */
+.side-menu {
+    position: fixed;
+    left: -250px; /* Hidden off-screen by default */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #111;
+    padding-top: 60px;
+    transition: 0.5s; /* Smooth transition */
+    z-index: 1000;
+    overflow-y: auto; /* Make it scrollable if there are too many items */
+}
+
+.side-menu.show {
+    left: 0; /* Slide in from the left when shown */
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #d9b3ff;
+    text-shadow: 0 0 5px #ff00ff;
+    transition: color 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+    color: #ff00ff;
+}
+
+/* Toggle Button (Hamburger Icon) */
+.toggle-button {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        z-index: 1001;
+    }
+
+    /* Make sure side menu covers everything */
+    .side-menu {
+        width: 100%; /* Full width on small screens */
+    }
 }
