@@ -52,59 +52,7 @@
             </div>
         </div>
     </main>
-
-    <!-- JavaScript -->
-    <script>
-        // Modal functionality
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.style.display = 'block'; // Show the modal
-            setTimeout(() => {
-                modal.classList.add('show'); // Add show class to make it visible and enable opacity transition
-            }, 10); // Delay to trigger transition smoothly
-        }
-
-        function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.remove('show'); // Remove show class for fading out effect
-            setTimeout(() => {
-                modal.style.display = 'none'; // Hide the modal after transition ends
-            }, 300); // Match this with CSS transition duration (0.3s)
-        }
-
-        // Close modal when clicking outside the modal content
-        window.onclick = function(event) {
-            const modals = document.getElementsByClassName('modal');
-            for (let i = 0; i < modals.length; i++) {
-                if (event.target == modals[i]) {
-                    closeModal(modals[i].id);
-        // Toggle navigation for mobile
-document.getElementById('toggle-button').addEventListener('click', function() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('show');
-
-    // For fading effect: remove the display property on show
-    if (navLinks.classList.contains('show')) {
-        navLinks.style.display = 'block'; // Set to block when shown
-        setTimeout(() => {
-            navLinks.style.opacity = '1'; // Fade in
-        }, 10); // Small timeout to allow for transition
-    } else {
-        navLinks.style.opacity = '0'; // Fade out
-        setTimeout(() => {
-            navLinks.style.display = 'none'; // Hide after fade out
-        }, 500); // Match with CSS transition duration
-    }
-});
-
-                }
-            }
-        }
-
-        // Toggle navigation for mobile
-        document.getElementById('toggle-button').addEventListener('click', function() {
-            document.getElementById('nav-links').classList.toggle('show');
-        });
-    </script>
+    <script src="script.js"></script>
+  
 </body>
 </html>
