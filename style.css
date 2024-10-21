@@ -6,9 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #2a2a72, #009ffd, #6a0572, #ff005d);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
+    background: #000000; /* Set background to black */
     font-family: 'Orbitron', sans-serif;
     color: #fff;
     overflow-x: hidden;
