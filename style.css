@@ -371,19 +371,39 @@ nav ul li a:hover {
 
 /* Responsive: Adjust spacing and size on smaller screens */
 @media (max-width: 768px) {
-    nav ul {
-        flex-wrap: wrap; /* Ensure wrapping happens */
+    /* Mobile Navbar */
+    #navbar {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Stack items vertically */
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+        position: fixed; /* Fixed position at the top */
+        top: 0; /* Align to the top */
+        right: 0; /* Align to the right */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        z-index: 1000; /* Layering */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        transition: transform 0.3s ease; /* Smooth transition */
     }
 
-    nav ul li {
-        width: 45%; /* Make each navigation item take up 45% of the row for two-column layout */
-        text-align: center;
+    #navbar.show {
+        display: flex; /* Show the navbar */
     }
 
-    nav ul li a {
-        font-size: 1.1rem; /* Slightly smaller font size for mobile */
+    #navbar a {
+        color: #d9b3ff; /* Link color */
+        text-decoration: none; /* Remove underline */
+        padding: 20px; /* Increased padding for better touch targets */
+        font-size: 1.5rem; /* Font size for links */
+        transition: color 0.3s ease; /* Transition for color change */
+    }
+
+    #navbar a:hover {
+        color: #ff00ff; /* Hover color */
     }
 }
+
 
 @media (max-width: 480px) {
     nav ul li {
