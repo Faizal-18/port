@@ -369,3 +369,28 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* Responsive: Adjust spacing and size on smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap; /* Ensure wrapping happens */
+    }
+
+    nav ul li {
+        width: 45%; /* Make each navigation item take up 45% of the row for two-column layout */
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem; /* Slightly smaller font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        width: 100%; /* Stack items vertically on extra small screens */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Further reduce font size */
+    }
+}
