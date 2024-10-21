@@ -6,12 +6,11 @@
 }
 
 body {
-    background: linear-gradient(135deg, #2a2a72, #009ffd, #6a0572, #ff005d);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-    font-family: 'Orbitron', sans-serif;
+    background:black;
+   font-family: 'Orbitron', sans-serif;
     color: #fff;
-    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* Smooth Gradient Animation */
