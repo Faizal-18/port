@@ -6,10 +6,11 @@
 }
 
 body {
-    background: red; /* Set background to black */
+    background: #000000; /* Set to black */
     font-family: 'Orbitron', sans-serif;
     color: #fff;
-    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* Smooth Gradient Animation */
