@@ -186,7 +186,7 @@ nav ul li a:hover {
 }
 
 /* Responsive Fix for Intro Section */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .intro-section {
         flex-direction: column;
     }
