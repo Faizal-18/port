@@ -3,61 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cyberpunk Portfolio - Home</title>
+    <title>Portfolio- Faizal </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="navbar">
-                <div class="toggle-button" id="toggle-button" aria-label="Toggle navigation menu">
+                <!-- Hamburger Icon for Mobile -->
+                <div class="toggle-button" id="toggle-button">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
+               
                 </div>
-                <!-- Side navigation menu for mobile -->
-                <div id="side-menu" class="side-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="skillsets.html">Skillsets</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="certifications.html">Certifications</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+                <!-- Navigation Links -->
+                <ul id="side-menu" class="side-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="skillsets.html">Skillsets</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
-
     <main>
+        <section>
+            <h1 class="neon-text">Profile</h1>
+        </section>
         <section class="intro-section">
             <div class="intro-box">
                 <div class="intro-text">
                     <h1 class="neon-text">Mohamedh Faizal</h1>
                     <h2 class="neon-subtitle">Aspiring Data Analyst</h2>
-                    <p class="about-me">Hello, this is Faizal from Madurai, an Aspiring Data Analyst. I am currently pursuing a B.Sc in CS with Data Science and Analytics at Manikam Ramaswami College of Arts and Science. I am a coding and tech enthusiast. I have completed my schooling at TVS HSS. My dream is to become a "Cricket Analyst". This portfolio is a way for you to get to know me better—who I am, what I do, and what I'm passionate about.</p>
+                    <p class="about-me">
+                        Hello, this is Faizal from Madurai, an aspiring Data Analyst. I am currently pursuing a B.Sc in Computer Science with Data Science and Analytics at Manikam Ramaswami College of Arts and Science. I am a coding and tech enthusiast. I have completed my schooling at TVS HSS. My dream is to become a "Cricket Analyst." This portfolio is a way for you to get to know me better—who I am, what I do, and what I'm passionate about.
+                    </p>
                 </div>
                 <div class="intro-pic">
-                    <img src="faiz-min.jpg" alt="Profile Picture of Mohamedh Faizal">
+                    <img src="faiz-min.jpg" alt="Profile picture of Mohamedh Faizal" />
                 </div>
             </div>
         </section>
-
-        <!-- Modal Trigger -->
-        <button onclick="openModal('myModal')">Open Modal</button>
-
-        <!-- Modal Structure -->
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('myModal')">&times;</span>
-                <p>This is a modal window</p>
-            </div>
-        </div>
     </main>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
