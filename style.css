@@ -69,13 +69,15 @@ body {
 /* Neon Text Effect */
 .neon-text {
     color: #d9b3ff;
-    text-shadow: 0 0 8px #d9b3ff, 0 0 16px #ff00ff, 0 0 24px #ff00ff, 0 0 32px #ff00ff;
-    font-size: 2.5rem;
-    transition: transform 0.3s ease;
+    text-shadow: 0 0 4px #d9b3ff, 0 0 8px #cc00cc, 0 0 12px #990099;
+    font-size: 2rem;
+    font-weight: 600; /* Add weight for a more professional look */
+    transition: transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 }
 
 .neon-text:hover {
-    transform: scale(1.15);
+    transform: scale(1.05); /* Subtle scaling on hover for a sleek effect */
+    text-shadow: 0 0 6px #d9b3ff, 0 0 12px #ff00ff, 0 0 18px #ff00ff;
 }
 
 
@@ -153,7 +155,7 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.75);
     padding: 40px;
     border-radius: 10px;
-    border: 2px solid #ff00ff;
+    border: 2px solid #fdfdfd;
     max-width: 900px;
     width: 90%;
 }
@@ -183,7 +185,7 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 2px solid #ff00ff;
+    border: 2px solid #ffffff;
 }
 
 .hobby-icons {
@@ -243,15 +245,16 @@ nav ul li a:hover {
 }
 
 .skills-list li {
+    text-align: center;
     font-size: 1.5rem;
     margin: 15px 0;
-    color: #d9b3ff;
-    text-shadow: 0 0 10px #ff00ff;
+    color: #fff9f9;
+    text-shadow: 0 0 10px #fffeff;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .skills-list li:hover {
-    color: #ff00ff;
+    color: #ffffff;
     transform: scale(1.1);
 }
 
@@ -306,4 +309,128 @@ nav ul li a:hover {
     color: #d9b3ff;
     text-align: center;
 }
+/* Mobile-specific styles */
+@media (max-width: 720px) {
+    .content-section {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid #ff00ff;
+        border-radius: 10px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+    
+    .intro-box {
+        flex-direction: column; /* Stack content vertically */
+        padding: 0px; /* Adjust padding */
+        border-radius: 0px;
+        max-width: 900px;
+        width: 100%;
+    }
 
+    .intro-pic {
+        width: 70%; /* Full width for image */
+        margin-bottom: 0px; /* Space below image */
+    }
+
+    .intro-text h1 {
+        font-size: 1.rem; /* Adjust font size for smaller screens */
+    }
+
+    .intro-text h2 {
+        font-size: 1.3rem; /* Adjust subtitle size */
+    }
+    .intro-text p {
+        font-size: 1.1rem; /* Adjust subtitle size */
+    }
+
+
+    .about-me {
+        font-size: 1rem; /* Adjust body text size */
+    }
+
+    /* Adjust navigation for mobile */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Modal adjustments */
+    .modal-content {
+        width: 90%; /* Increase width for small screens */
+    }
+
+    /* Other sections can be adjusted similarly */
+    /* Side Menu Styles */
+.side-menu {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fix to the side of the screen */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 250px; /* Width of the menu */
+    height: 100%; /* Full height */
+    background-color: rgb(0, 0, 0); /* Dark background */
+    border-right: 2px solid #ff00ff; /* Border on the right */
+    z-index: 1001; /* Above other content */
+    padding: 20px; /* Padding inside the menu */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Show side menu when active */
+.side-menu.active {
+    display: block; /* Show the menu */
+}
+
+/* Side Menu Links */
+.side-menu li {
+    margin: 15px 0; /* Space between links */
+}
+
+.side-menu a {
+    color: #d9b3ff; /* Link color */
+    font-size: 1.2rem; /* Font size */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.side-menu a:hover {
+    color: #ff00ff; /* Color on hover */
+}
+
+/* Hamburger Menu */
+.toggle-button {
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex;
+    flex-direction: column; /* Stack bars vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 25px; /* Width of the bars */
+    height: 3px; /* Height of the bars */
+    background-color: #d9b3ff; /* Color of the bars */
+    margin: 4px; /* Space between bars */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Toggle button active state (when clicked) */
+.toggle-button.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Transform the first bar */
+}
+
+.toggle-button.active .bar:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.toggle-button.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Transform the last bar */
+}
+}
