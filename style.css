@@ -6,26 +6,21 @@
 }
 
 body {
-    background:black;
+    background:#BAD6EB;
    font-family: 'Orbitron', sans-serif;
     color: #fff;
     min-height: 100vh;
     margin: 0;
 }
 
-/* Smooth Gradient Animation */
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+
 /* Contact Section */
 .contact-box {
     margin: 50px auto;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
     border-radius: 15px;
-    border: 2px solid #ff00ff; /* Cyberpunk border */
+    border: 2px solid #1500ff; /* Cyberpunk border */
     max-width: 600px;
     text-align: center;
 }
@@ -41,7 +36,7 @@ body {
 }
 
 .contact-details a {
-    color: #d9b3ff;
+    color: #ffffff;
     font-size: 1.5rem;
     margin: 10px 0;
     text-decoration: none;
@@ -49,27 +44,28 @@ body {
 }
 
 .contact-details a:hover {
-    color: #ff00ff;
+    color: #00184c;
     transform: scale(1.1);
 }
 
 /* Contact Icons */
 .contact-details i {
     margin-right: 10px;
-    color: #d9b3ff;
+    color: #00184c;
     font-size: 2rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .contact-details a:hover i {
     color: #ff00ff;
+    transform: scale(1.1);
 }
 
 
 /* Neon Text Effect */
 .neon-text {
-    color: #d9b3ff;
-    text-shadow: 0 0 4px #d9b3ff, 0 0 8px #cc00cc, 0 0 12px #990099;
+    color: #003151;
+    text-shadow: 0 0 4px #b3e6ff, 0 0 8px #005fcc, 0 0 12px #fffefe;
     font-size: 2rem;
     font-weight: 600; /* Add weight for a more professional look */
     transition: transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
@@ -77,7 +73,7 @@ body {
 
 .neon-text:hover {
     transform: scale(1.05); /* Subtle scaling on hover for a sleek effect */
-    text-shadow: 0 0 6px #d9b3ff, 0 0 12px #ff00ff, 0 0 18px #ff00ff;
+    text-shadow: 0 0 6px #7a7cd5, 0 0 12px #013bcd, 0 0 18px #000000;
 }
 
 
@@ -100,8 +96,8 @@ section {
     border: 1px solid #444;
     margin: 30px 15px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.75);
-    border: 2px solid #ff00ff;
+    background-color: #4e6c9a;
+    border: 2px solid #0a0073;
     animation: fadeInUp 1s ease-in-out;
 }
 
@@ -110,7 +106,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #111;
+    background-color: #ffffff;
     padding: 15px 0;
     z-index: 1000;
 }
@@ -126,15 +122,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #d9b3ff;
+    color: #081F5C;
     text-decoration: none;
-    text-shadow: 0 0 5px #ff00ff;
+    text-shadow: 0 0 5px #14019ecc;
     font-size: 1.1rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff00ff;
+    color: #00098985;
     transform: scale(1.2);
 }
 
@@ -152,7 +148,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 253, 253, 0.947);
     padding: 40px;
     border-radius: 10px;
     border: 2px solid #fdfdfd;
@@ -162,18 +158,18 @@ nav ul li a:hover {
 
 .intro-text h1 {
     font-size: 2.5rem;
-    color: #d9b3ff;
+    color: #130052;
 }
 
 .intro-text h2 {
     font-size: 1.5rem;
-    color: #fff;
+    color: #030044;
     margin-bottom: 20px;
 }
 
 .about-me {
     font-size: 1.2rem;
-    color: #fff;
+    color: #060202;
 }
 
 .intro-pic {
@@ -206,7 +202,7 @@ nav ul li a:hover {
 
 .hobby i {
     font-size: 4rem; /* Icon size */
-    color: #d9b3ff; /* Icon color */
+    color: #081F5C; /* Icon color */
     transition: transform 0.3s ease, color 0.3s ease; /* Animation for hover */
 }
 
@@ -215,7 +211,7 @@ nav ul li a:hover {
 }
 
 .hobby:hover i {
-    color: #ff00ff; /* Change color on hover */
+    color: #c7e8fa; /* Change color on hover */
     transform: translateY(-10px); /* Slightly move the icon upwards */
 }
 
@@ -235,8 +231,8 @@ nav ul li a:hover {
 .content-section {
     margin-top: 50px;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 2px solid #ff00ff;
+    background-color: #4e6c9a;
+    border: 2px solid #0a0073;
     border-radius: 10px;
     max-width: 800px;
     margin-left: auto;
@@ -248,7 +244,7 @@ nav ul li a:hover {
     text-align: center;
     font-size: 1.5rem;
     margin: 15px 0;
-    color: #fff9f9;
+    color: #ffffff;
     text-shadow: 0 0 10px #fffeff;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -260,18 +256,19 @@ nav ul li a:hover {
 
 /* Certifications Section */
 .certification-card {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #4e6c9a;
     padding: 25px;
     margin: 30px auto;
     border-radius: 10px;
-    border: 2px solid #ff00ff;
+    border: 2px solid #0a0073;
     max-width: 600px;
+    width: 100%;
     color: #fff;
     text-align: left;
 }
 
 .certification-card h2 {
-    color: #d9b3ff;
+    color: #002444;
     margin-bottom: 15px;
 }
 
@@ -310,13 +307,13 @@ nav ul li a:hover {
     text-align: center;
 }
 /* Mobile-specific styles */
-@media (max-width: 720px) {
+@media (max-width: 770px) {
     .content-section {
         flex-direction: column;
         margin-top: 50px;
         padding: 0px;
-        background-color: rgba(0, 0, 0, 0.8);
-        border: 2px solid #ff00ff;
+        background-color: #4e6c9a;
+        border: 2px solid #0a0073;
         border-radius: 10px;
         max-width: 800px;
         margin-left: auto;
@@ -376,11 +373,11 @@ nav ul li a:hover {
     left: 0; /* Align to the left */
     width: 250px; /* Width of the menu */
     height: 100%; /* Full height */
-    background-color: rgb(0, 0, 0); /* Dark background */
-    border-right: 2px solid #ff00ff; /* Border on the right */
+    background-color: rgb(255, 255, 255); /* Dark background */
+    border-right: 2px solid  #081F5C;; /* Border on the right */
     z-index: 1001; /* Above other content */
     padding: 20px; /* Padding inside the menu */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 2px 0 5px rgb(255, 255, 255); /* Subtle shadow */
 }
 
 /* Show side menu when active */
@@ -394,14 +391,14 @@ nav ul li a:hover {
 }
 
 .side-menu a {
-    color: #d9b3ff; /* Link color */
+    color: #081F5C; /* Link color */
     font-size: 1.2rem; /* Font size */
     text-decoration: none; /* No underline */
     transition: color 0.3s ease; /* Smooth color change */
 }
 
 .side-menu a:hover {
-    color: #ff00ff; /* Color on hover */
+    color: #221c9b; /* Color on hover */
 }
 
 /* Hamburger Menu */
@@ -433,4 +430,57 @@ nav ul li a:hover {
 .toggle-button.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px); /* Transform the last bar */
 }
+}
+.achievement-list {
+    margin-top: 20px;
+}
+
+.achievement {
+    border-bottom: 1px solid #08f7fe;
+    padding: 10px 0;
+}
+
+.achievement-title {
+    font-size: 1.5em;
+    color: #a59e13;
+}
+
+.achievement-date {
+    font-size: 0.9em;
+    color: #08f7fe;
+}
+
+.achievement-description {
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.4;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(22, 19, 32, 0.9);
+    padding: 20px;
+    border: 2px solid #08f7fe;
+    box-shadow: 0 0 20px #00ffcb;
+    border-radius: 10px;
+}
+.image-container {
+    display: flex;
+    gap: 10px; /* Space between images */
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.image-container img {
+    width: 45%; /* Adjust width as needed */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #08f7fe;
+}
+.highlight {
+    color: #d9ff00;       /* Bright, contrasting color */
+    font-weight: bold;    /* Makes the text bold */
+    text-shadow: 0 0 5px #d6d64b, 0 0 10px #d6d64b; /* Cyberpunk glow effect */
+    font-style: italic;   /* Optional: adds emphasis */
 }
