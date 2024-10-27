@@ -413,7 +413,7 @@ nav ul li a:hover {
 .bar {
     width: 25px; /* Width of the bars */
     height: 3px; /* Height of the bars */
-    background-color: #d9b3ff; /* Color of the bars */
+    background-color:#220242; /* Color of the bars */
     margin: 4px; /* Space between bars */
     transition: all 0.3s ease; /* Smooth transition */
 }
