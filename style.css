@@ -285,6 +285,7 @@ nav ul li a:hover {
 }
 
 /* Modal Box */
+/* Modal Box */
 .modal {
     display: none;
     position: fixed;
@@ -303,16 +304,17 @@ nav ul li a:hover {
 }
 
 .modal-content {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #ffffff;
     margin: 15% auto;
     padding: 20px;
-    border: 2px solid #ff00ff;
+    border: 1px solid #005f99;
     width: 80%;
     max-width: 500px;
     border-radius: 10px;
-    color: #d9b3ff;
+    color: #333;
     text-align: center;
 }
+
 /* Mobile-specific styles */
 @media (max-width: 770px) {
     .content-section {
@@ -443,51 +445,58 @@ nav ul li a:hover {
 }
 
 .achievement {
-    border-bottom: 1px solid #08f7fe;
+    border-bottom: 1px solid #ccc;
     padding: 10px 0;
 }
 
 .achievement-title {
     font-size: 1.5em;
-    color: #a59e13;
+    color: #2c3e50;
 }
 
 .achievement-date {
     font-size: 0.9em;
-    color: #08f7fe;
+    color: #555;
 }
 
 .achievement-description {
     font-size: 1em;
-    color: #ffffff;
+    color: #333;
     line-height: 1.4;
 }
+
+/* Container for general content */
 .container {
     width: 100%;
     max-width: 800px;
+    margin: 30px auto;
     text-align: center;
-    background: rgba(22, 19, 32, 0.9);
+    background: #ffffff;
     padding: 20px;
-    border: 2px solid #08f7fe;
-    box-shadow: 0 0 20px #00ffcb;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
+/* Image Container for responsive images */
 .image-container {
     display: flex;
-    gap: 10px; /* Space between images */
+    gap: 10px;
     justify-content: center;
     margin-top: 15px;
 }
 
 .image-container img {
-    width: 45%; /* Adjust width as needed */
+    width: 45%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 0 10px #08f7fe;
+    box-shadow: 0 0 10px rgba(0, 95, 153, 0.3);
 }
+
+/* Highlight class for emphasized text */
 .highlight {
-    color: #d9ff00;       /* Bright, contrasting color */
-    font-weight: bold;    /* Makes the text bold */
-    text-shadow: 0 0 5px #d6d64b, 0 0 10px #d6d64b; /* Cyberpunk glow effect */
-    font-style: italic;   /* Optional: adds emphasis */
+    color: #005f99;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 95, 153, 0.4), 0 0 10px rgba(0, 95, 153, 0.4);
+    font-style: italic;
 }
