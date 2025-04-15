@@ -419,3 +419,42 @@ nav ul li a:hover {
     text-shadow: 0 0 5px rgba(0, 95, 153, 0.4), 0 0 10px rgba(0, 95, 153, 0.4);
     font-style: italic;
 }
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin-left: 20px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+@media (max-width: 770px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
